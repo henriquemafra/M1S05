@@ -10,3 +10,17 @@
  *      remover os elementos do array compreendidos entre os índices inicial e final. Em seguida, retorna o
  *      array atualizado.
  */
+
+function adicionarElemento(array, elemento) {
+  array.push(elemento);
+  return array;
+}
+
+function removerUltimoElemento(array) {
+  return array.pop();
+}
+
+function removerElementosIntervalo(array, indiceInicial, indiceFinal) {
+  array.splice(indiceInicial, indiceFinal - indiceInicial + 1);
+  return array;
+}
